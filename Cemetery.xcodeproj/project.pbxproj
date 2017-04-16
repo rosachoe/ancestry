@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1515B2731E9D4A72005FD1A7 /* Memorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515B2721E9D4A72005FD1A7 /* Memorial.swift */; };
+		1515B2751E9D4EFD005FD1A7 /* MemorialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515B2741E9D4EFD005FD1A7 /* MemorialTableViewCell.swift */; };
 		158B371B1E9CBB83009CFC37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B371A1E9CBB83009CFC37 /* AppDelegate.swift */; };
 		158B371D1E9CBB83009CFC37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B371C1E9CBB83009CFC37 /* ViewController.swift */; };
 		158B37201E9CBB83009CFC37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158B371E1E9CBB83009CFC37 /* Main.storyboard */; };
@@ -14,6 +16,13 @@
 		158B37251E9CBB83009CFC37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158B37231E9CBB83009CFC37 /* LaunchScreen.storyboard */; };
 		158B37301E9CBB83009CFC37 /* CemeteryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B372F1E9CBB83009CFC37 /* CemeteryTests.swift */; };
 		158B373B1E9CBB83009CFC37 /* CemeteryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B373A1E9CBB83009CFC37 /* CemeteryUITests.swift */; };
+		158B376A1E9CBD18009CFC37 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B37691E9CBD18009CFC37 /* Data.swift */; };
+		158B376D1E9CC83C009CFC37 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B376C1E9CC83C009CFC37 /* MapViewController.swift */; };
+		158B376F1E9CC848009CFC37 /* CemeteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B376E1E9CC848009CFC37 /* CemeteryViewController.swift */; };
+		158B37731E9CC8A4009CFC37 /* MemorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B37721E9CC8A4009CFC37 /* MemorialViewController.swift */; };
+		158B37781E9CDE38009CFC37 /* Cemetery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B37771E9CDE38009CFC37 /* Cemetery.swift */; };
+		15B161661E9F52F1008641C3 /* Pods_Cemetery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B161651E9F52F1008641C3 /* Pods_Cemetery.framework */; };
+		7D403F4964719BB0B0C1E4CD /* Pods_Cemetery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA5FEE75C3562B037C80525 /* Pods_Cemetery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +40,60 @@
 			remoteGlobalIDString = 158B37161E9CBB83009CFC37;
 			remoteInfo = Cemetery;
 		};
+		158B37531E9CBC80009CFC37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158B37481E9CBC7F009CFC37 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		158B37551E9CBC80009CFC37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158B37481E9CBC7F009CFC37 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		158B37571E9CBC80009CFC37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158B37481E9CBC7F009CFC37 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		158B37591E9CBC80009CFC37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158B37481E9CBC7F009CFC37 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		158B375B1E9CBC80009CFC37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158B37481E9CBC7F009CFC37 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		158B375D1E9CBC80009CFC37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158B37481E9CBC7F009CFC37 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		158B375F1E9CBC80009CFC37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 158B37481E9CBC7F009CFC37 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1515B2721E9D4A72005FD1A7 /* Memorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memorial.swift; sourceTree = "<group>"; };
+		1515B2741E9D4EFD005FD1A7 /* MemorialTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemorialTableViewCell.swift; sourceTree = "<group>"; };
 		158B37171E9CBB83009CFC37 /* Cemetery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cemetery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158B371A1E9CBB83009CFC37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		158B371C1E9CBB83009CFC37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +107,16 @@
 		158B37361E9CBB83009CFC37 /* CemeteryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CemeteryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		158B373A1E9CBB83009CFC37 /* CemeteryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CemeteryUITests.swift; sourceTree = "<group>"; };
 		158B373C1E9CBB83009CFC37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		158B37481E9CBC7F009CFC37 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		158B37691E9CBD18009CFC37 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		158B376C1E9CC83C009CFC37 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		158B376E1E9CC848009CFC37 /* CemeteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CemeteryViewController.swift; sourceTree = "<group>"; };
+		158B37721E9CC8A4009CFC37 /* MemorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemorialViewController.swift; sourceTree = "<group>"; };
+		158B37771E9CDE38009CFC37 /* Cemetery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cemetery.swift; sourceTree = "<group>"; };
+		15B161651E9F52F1008641C3 /* Pods_Cemetery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Cemetery.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Cemetery-fgohoytdfmfyxwbuuywxheffjdds/Build/Products/Debug-iphonesimulator/Pods_Cemetery.framework"; sourceTree = "<group>"; };
+		9553D4E1D4622CA759E4D046 /* Pods-Cemetery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cemetery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cemetery/Pods-Cemetery.release.xcconfig"; sourceTree = "<group>"; };
+		A7083D23196F6D0BCA300D71 /* Pods-Cemetery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cemetery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cemetery/Pods-Cemetery.debug.xcconfig"; sourceTree = "<group>"; };
+		EBA5FEE75C3562B037C80525 /* Pods_Cemetery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cemetery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B161661E9F52F1008641C3 /* Pods_Cemetery.framework in Frameworks */,
+				7D403F4964719BB0B0C1E4CD /* Pods_Cemetery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +149,13 @@
 		158B370E1E9CBB83009CFC37 = {
 			isa = PBXGroup;
 			children = (
+				158B37481E9CBC7F009CFC37 /* Alamofire.xcodeproj */,
 				158B37191E9CBB83009CFC37 /* Cemetery */,
 				158B372E1E9CBB83009CFC37 /* CemeteryTests */,
 				158B37391E9CBB83009CFC37 /* CemeteryUITests */,
 				158B37181E9CBB83009CFC37 /* Products */,
+				C3CBC3C59950AC16089B9DAB /* Pods */,
+				ED9BF9834B23529BDD6FFB7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +172,9 @@
 		158B37191E9CBB83009CFC37 /* Cemetery */ = {
 			isa = PBXGroup;
 			children = (
+				158B37741E9CC955009CFC37 /* Cell */,
+				158B376B1E9CC7A3009CFC37 /* View Controller */,
+				158B37681E9CBD0F009CFC37 /* Model */,
 				158B371A1E9CBB83009CFC37 /* AppDelegate.swift */,
 				158B371C1E9CBB83009CFC37 /* ViewController.swift */,
 				158B371E1E9CBB83009CFC37 /* Main.storyboard */,
@@ -125,6 +203,66 @@
 			path = CemeteryUITests;
 			sourceTree = "<group>";
 		};
+		158B37491E9CBC80009CFC37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				158B37541E9CBC80009CFC37 /* Alamofire.framework */,
+				158B37561E9CBC80009CFC37 /* Alamofire iOS Tests.xctest */,
+				158B37581E9CBC80009CFC37 /* Alamofire.framework */,
+				158B375A1E9CBC80009CFC37 /* Alamofire macOS Tests.xctest */,
+				158B375C1E9CBC80009CFC37 /* Alamofire.framework */,
+				158B375E1E9CBC80009CFC37 /* Alamofire tvOS Tests.xctest */,
+				158B37601E9CBC80009CFC37 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		158B37681E9CBD0F009CFC37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				158B37691E9CBD18009CFC37 /* Data.swift */,
+				158B37771E9CDE38009CFC37 /* Cemetery.swift */,
+				1515B2721E9D4A72005FD1A7 /* Memorial.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		158B376B1E9CC7A3009CFC37 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				158B376C1E9CC83C009CFC37 /* MapViewController.swift */,
+				158B376E1E9CC848009CFC37 /* CemeteryViewController.swift */,
+				158B37721E9CC8A4009CFC37 /* MemorialViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		158B37741E9CC955009CFC37 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1515B2741E9D4EFD005FD1A7 /* MemorialTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		C3CBC3C59950AC16089B9DAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7083D23196F6D0BCA300D71 /* Pods-Cemetery.debug.xcconfig */,
+				9553D4E1D4622CA759E4D046 /* Pods-Cemetery.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED9BF9834B23529BDD6FFB7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15B161651E9F52F1008641C3 /* Pods_Cemetery.framework */,
+				EBA5FEE75C3562B037C80525 /* Pods_Cemetery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 158B373F1E9CBB83009CFC37 /* Build configuration list for PBXNativeTarget "Cemetery" */;
 			buildPhases = (
+				A5FD715197D7F57E5B023F4E /* [CP] Check Pods Manifest.lock */,
 				158B37131E9CBB83009CFC37 /* Sources */,
 				158B37141E9CBB83009CFC37 /* Frameworks */,
 				158B37151E9CBB83009CFC37 /* Resources */,
+				30607A65C187F952E0E1C657 /* [CP] Embed Pods Frameworks */,
+				555C39F8015E4272F7CB3BF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +362,12 @@
 			mainGroup = 158B370E1E9CBB83009CFC37;
 			productRefGroup = 158B37181E9CBB83009CFC37 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 158B37491E9CBC80009CFC37 /* Products */;
+					ProjectRef = 158B37481E9CBC7F009CFC37 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				158B37161E9CBB83009CFC37 /* Cemetery */,
@@ -229,6 +376,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		158B37541E9CBC80009CFC37 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 158B37531E9CBC80009CFC37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		158B37561E9CBC80009CFC37 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 158B37551E9CBC80009CFC37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		158B37581E9CBC80009CFC37 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 158B37571E9CBC80009CFC37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		158B375A1E9CBC80009CFC37 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 158B37591E9CBC80009CFC37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		158B375C1E9CBC80009CFC37 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 158B375B1E9CBC80009CFC37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		158B375E1E9CBC80009CFC37 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 158B375D1E9CBC80009CFC37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		158B37601E9CBC80009CFC37 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 158B375F1E9CBC80009CFC37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		158B37151E9CBB83009CFC37 /* Resources */ = {
@@ -257,13 +456,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30607A65C187F952E0E1C657 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cemetery/Pods-Cemetery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		555C39F8015E4272F7CB3BF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cemetery/Pods-Cemetery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5FD715197D7F57E5B023F4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		158B37131E9CBB83009CFC37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				158B371D1E9CBB83009CFC37 /* ViewController.swift in Sources */,
+				158B37781E9CDE38009CFC37 /* Cemetery.swift in Sources */,
+				1515B2731E9D4A72005FD1A7 /* Memorial.swift in Sources */,
+				158B376F1E9CC848009CFC37 /* CemeteryViewController.swift in Sources */,
+				158B376A1E9CBD18009CFC37 /* Data.swift in Sources */,
+				158B37731E9CC8A4009CFC37 /* MemorialViewController.swift in Sources */,
 				158B371B1E9CBB83009CFC37 /* AppDelegate.swift in Sources */,
+				1515B2751E9D4EFD005FD1A7 /* MemorialTableViewCell.swift in Sources */,
+				158B376D1E9CC83C009CFC37 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +669,7 @@
 		};
 		158B37401E9CBB83009CFC37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7083D23196F6D0BCA300D71 /* Pods-Cemetery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 34587EW5NH;
@@ -423,11 +678,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = rosachoe.Cemetery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		158B37411E9CBB83009CFC37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9553D4E1D4622CA759E4D046 /* Pods-Cemetery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 34587EW5NH;
@@ -436,6 +693,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = rosachoe.Cemetery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -516,6 +774,7 @@
 				158B37411E9CBB83009CFC37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		158B37421E9CBB83009CFC37 /* Build configuration list for PBXNativeTarget "CemeteryTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +783,7 @@
 				158B37441E9CBB83009CFC37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		158B37451E9CBB83009CFC37 /* Build configuration list for PBXNativeTarget "CemeteryUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +792,7 @@
 				158B37471E9CBB83009CFC37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,26 +1,232 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d86-XB-zKk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="z2q-Zu-Wdu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="d86-XB-zKk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8HC-sE-MuL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pwe-XF-6wg" kind="relationship" relationship="rootViewController" id="2a1-pO-g6M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eb0-EZ-seB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="853"/>
+        </scene>
+        <!--Cemeteries-->
+        <scene sceneID="hIN-Db-tEQ">
+            <objects>
+                <viewController id="pwe-XF-6wg" customClass="MapViewController" customModule="Cemetery" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="rGZ-kI-Cpo"/>
+                        <viewControllerLayoutGuide type="bottom" id="8h3-hk-hlt"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="AYi-qb-1NM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="p4s-Ym-1X0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p4s-Ym-1X0" firstAttribute="centerX" secondItem="AYi-qb-1NM" secondAttribute="centerX" id="X1f-Id-xpo"/>
+                            <constraint firstItem="p4s-Ym-1X0" firstAttribute="width" secondItem="AYi-qb-1NM" secondAttribute="width" id="Zwz-JO-tU1"/>
+                            <constraint firstItem="p4s-Ym-1X0" firstAttribute="height" secondItem="AYi-qb-1NM" secondAttribute="height" id="rib-8v-Auu"/>
+                            <constraint firstItem="p4s-Ym-1X0" firstAttribute="centerY" secondItem="AYi-qb-1NM" secondAttribute="centerY" id="uJv-ny-jjb"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Cemeteries" id="n1o-R5-ykz"/>
+                    <connections>
+                        <outlet property="map" destination="p4s-Ym-1X0" id="ovz-v1-czj"/>
+                        <segue destination="5uj-L9-9qn" kind="show" identifier="mapToCemetery" id="Ka3-ls-iN5"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8c-er-iBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="853.22338830584715"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="C58-zn-dbo">
+            <objects>
+                <viewController id="5uj-L9-9qn" customClass="CemeteryViewController" customModule="Cemetery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fxs-TR-Ir8"/>
+                        <viewControllerLayoutGuide type="bottom" id="zK8-oD-cks"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TPQ-rI-YNl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234 Address St" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4z-7G-bzK">
+                                <rect key="frame" x="124" y="72" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name, State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRI-V0-h87">
+                                <rect key="frame" x="123" y="101" width="129" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="11O-zE-f9j">
+                                <rect key="frame" x="0.0" y="129" width="375" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="memorial" id="l6U-6u-rTi" customClass="MemorialTableViewCell" customModule="Cemetery" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l6U-6u-rTi" id="0TC-Vj-3rc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOB: 12/31/2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfC-hd-ISV">
+                                                    <rect key="frame" x="239" y="11.5" width="128" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstName LastName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpQ-mc-nPt">
+                                                    <rect key="frame" x="8" y="11.5" width="161" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="GpQ-mc-nPt" secondAttribute="leading" id="4fl-Zw-02Y"/>
+                                                <constraint firstItem="zfC-hd-ISV" firstAttribute="centerY" secondItem="0TC-Vj-3rc" secondAttribute="centerY" id="9c3-5k-1J3"/>
+                                                <constraint firstItem="GpQ-mc-nPt" firstAttribute="centerY" secondItem="0TC-Vj-3rc" secondAttribute="centerY" id="g8n-CK-gZS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zfC-hd-ISV" secondAttribute="trailing" id="y6H-0H-pXi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dob" destination="zfC-hd-ISV" id="McB-uV-WDo"/>
+                                            <outlet property="name" destination="GpQ-mc-nPt" id="unu-g3-zDZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n4z-7G-bzK" firstAttribute="centerX" secondItem="TPQ-rI-YNl" secondAttribute="centerX" id="3Hx-XX-uaq"/>
+                            <constraint firstItem="SRI-V0-h87" firstAttribute="centerX" secondItem="TPQ-rI-YNl" secondAttribute="centerX" id="9lI-r9-Chx"/>
+                            <constraint firstItem="zK8-oD-cks" firstAttribute="top" secondItem="11O-zE-f9j" secondAttribute="bottom" id="HKW-mm-a1h"/>
+                            <constraint firstItem="n4z-7G-bzK" firstAttribute="top" secondItem="fxs-TR-Ir8" secondAttribute="bottom" constant="8" id="Izi-oc-6QU"/>
+                            <constraint firstItem="SRI-V0-h87" firstAttribute="top" secondItem="n4z-7G-bzK" secondAttribute="bottom" constant="8" id="deb-Qg-KzJ"/>
+                            <constraint firstItem="11O-zE-f9j" firstAttribute="centerX" secondItem="TPQ-rI-YNl" secondAttribute="centerX" id="kHc-2X-XqJ"/>
+                            <constraint firstItem="11O-zE-f9j" firstAttribute="top" secondItem="SRI-V0-h87" secondAttribute="bottom" constant="8" id="lxP-Tg-kDN"/>
+                            <constraint firstItem="11O-zE-f9j" firstAttribute="width" secondItem="TPQ-rI-YNl" secondAttribute="width" id="xGo-hS-qc5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="z7P-Ob-pOg"/>
+                    <connections>
+                        <outlet property="city" destination="SRI-V0-h87" id="PIg-Q8-eT8"/>
+                        <outlet property="memorialTable" destination="11O-zE-f9j" id="EQg-L0-SfZ"/>
+                        <outlet property="name" destination="z7P-Ob-pOg" id="U9A-Zd-Qk6"/>
+                        <outlet property="street" destination="n4z-7G-bzK" id="n63-Ej-HJL"/>
+                        <segue destination="bta-3k-j5k" kind="show" identifier="cemToMemorial" id="hE1-tT-DaB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kG7-mp-UDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.6" y="852.3238380809596"/>
+        </scene>
+        <!--Name-->
+        <scene sceneID="e5j-68-jfv">
+            <objects>
+                <viewController id="bta-3k-j5k" customClass="MemorialViewController" customModule="Cemetery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t4y-0N-BKT"/>
+                        <viewControllerLayoutGuide type="bottom" id="kpk-FB-gkk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bXv-zh-JJy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Efi-T8-7kW">
+                                <rect key="frame" x="67" y="103" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="EoV-9q-Qu5"/>
+                                    <constraint firstAttribute="width" constant="240" id="WZb-ZO-oeN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstName LastName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9er-xv-9n4">
+                                <rect key="frame" x="61.5" y="367" width="251.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth: 12/31/2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMK-bw-FYx">
+                                <rect key="frame" x="92" y="407.5" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthplace: City Name, State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzL-n6-JU0">
+                                <rect key="frame" x="79" y="436.5" width="216" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Death: 12/31/2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A7-hv-xNK">
+                                <rect key="frame" x="88" y="496.5" width="199" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place of Death: City Name, State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHS-AN-cZV">
+                                <rect key="frame" x="62" y="525.5" width="250" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7A7-hv-xNK" firstAttribute="top" secondItem="OzL-n6-JU0" secondAttribute="bottom" constant="39" id="2Kp-0m-hd8"/>
+                            <constraint firstItem="uMK-bw-FYx" firstAttribute="centerX" secondItem="bXv-zh-JJy" secondAttribute="centerX" id="6tj-yc-tS2"/>
+                            <constraint firstItem="9er-xv-9n4" firstAttribute="top" secondItem="Efi-T8-7kW" secondAttribute="bottom" constant="24" id="9Mz-To-wYJ"/>
+                            <constraint firstItem="OzL-n6-JU0" firstAttribute="centerX" secondItem="bXv-zh-JJy" secondAttribute="centerX" id="C2j-Ee-nsW"/>
+                            <constraint firstItem="9er-xv-9n4" firstAttribute="centerX" secondItem="bXv-zh-JJy" secondAttribute="centerX" id="Ngw-gA-wU0"/>
+                            <constraint firstItem="Efi-T8-7kW" firstAttribute="centerX" secondItem="bXv-zh-JJy" secondAttribute="centerX" id="WWn-R4-HJE"/>
+                            <constraint firstItem="nHS-AN-cZV" firstAttribute="centerX" secondItem="bXv-zh-JJy" secondAttribute="centerX" id="ZjE-Hw-h0H"/>
+                            <constraint firstItem="nHS-AN-cZV" firstAttribute="top" secondItem="7A7-hv-xNK" secondAttribute="bottom" constant="8" id="mi8-kX-bEZ"/>
+                            <constraint firstItem="7A7-hv-xNK" firstAttribute="centerX" secondItem="bXv-zh-JJy" secondAttribute="centerX" id="mkX-sQ-yiz"/>
+                            <constraint firstItem="Efi-T8-7kW" firstAttribute="top" secondItem="t4y-0N-BKT" secondAttribute="bottom" constant="39" id="qXG-xz-RhC"/>
+                            <constraint firstItem="OzL-n6-JU0" firstAttribute="top" secondItem="uMK-bw-FYx" secondAttribute="bottom" constant="8" id="rxW-VJ-z6a"/>
+                            <constraint firstItem="uMK-bw-FYx" firstAttribute="top" secondItem="9er-xv-9n4" secondAttribute="bottom" constant="8" id="tNs-kp-mmA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Name" id="qU6-Nu-345"/>
+                    <connections>
+                        <outlet property="dob" destination="uMK-bw-FYx" id="Vvi-D3-yHu"/>
+                        <outlet property="dod" destination="7A7-hv-xNK" id="Rpz-ZH-QQ4"/>
+                        <outlet property="name" destination="9er-xv-9n4" id="zDj-9E-86B"/>
+                        <outlet property="photo" destination="Efi-T8-7kW" id="QTl-n6-f3x"/>
+                        <outlet property="pob" destination="OzL-n6-JU0" id="NDy-JW-lez"/>
+                        <outlet property="pod" destination="nHS-AN-cZV" id="dhw-AG-nZJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6mK-Lf-AwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880.8" y="856.82158920539734"/>
         </scene>
     </scenes>
 </document>
